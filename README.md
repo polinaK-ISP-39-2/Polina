@@ -1,6 +1,6 @@
 # Polina
 Перед началом установки, нужно установить Linux Oracle в VirtualBox, для этого нужного:
-Иметь образ Linux dsltkbnm 2 zlhf/ Dsltkbnm 5096+ МБ оперативы.
+Иметь образ Linux 5096+ МБ оперативы.
 
 Далее переходим к установке docker с использованием grafana, вводим следующий набор команд:
 1. sudo yu install wget
