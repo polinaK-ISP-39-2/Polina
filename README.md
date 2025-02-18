@@ -29,6 +29,7 @@
 ![9](https://github.com/user-attachments/assets/259acd80-6ea0-4ce1-8f29-8912fe494710)
 - Можно скачать git прямо из командной строки прописав Y
 10. ![10](https://github.com/user-attachments/assets/884bbe0d-a21b-47ca-b0ba-6a4d4b94ffb3)
+  - Как заметим, произошла ошибка; ```Не удалось установить пакеты: Failed  to obtain authentication```
 ![Fail](https://github.com/user-attachments/assets/5e3b4dfb-61ac-43ed-8042-6a6e5826e264)
 ![Problem](https://github.com/user-attachments/assets/0b0f9b74-2f52-464a-bec3-6f2b7605e1e9)
 ![+](https://github.com/user-attachments/assets/72c9be2d-0aa0-4bde-bd87-ccebb87bf70a)
