@@ -25,6 +25,7 @@
 - Представление прав на выполнение файла docker-compose
 9. docker-compose --version
 - Проверка установленных версии docker-compose
+  
 ![9](https://github.com/user-attachments/assets/259acd80-6ea0-4ce1-8f29-8912fe494710)
 - Можно скачать git прямо из командной строки прописав Y
 10. ![10](https://github.com/user-attachments/assets/884bbe0d-a21b-47ca-b0ba-6a4d4b94ffb3)
