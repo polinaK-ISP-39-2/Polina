@@ -31,5 +31,36 @@
 10. ![10](https://github.com/user-attachments/assets/884bbe0d-a21b-47ca-b0ba-6a4d4b94ffb3)
   - Как заметим, произошла ошибка; ```Не удалось установить пакеты: Failed  to obtain authentication```
 ![Fail](https://github.com/user-attachments/assets/5e3b4dfb-61ac-43ed-8042-6a6e5826e264)
+Что бы избавиться от проблемы, было принято ввести команду с использованием sudo, права суперпользователя. Это нужно, если мы хотим установить или изменить что-то в системе: ```sudo git clone https://github.com/skl256/grafana_stack_for_docker.git```
+`sudo yum install git - команда, которая установила Git на систему.
 ![Problem](https://github.com/user-attachments/assets/0b0f9b74-2f52-464a-bec3-6f2b7605e1e9)
+Ошибка была исправлена, Git был установлен.
 ![+](https://github.com/user-attachments/assets/72c9be2d-0aa0-4bde-bd87-ccebb87bf70a)
+11. ```cd grafana_stack_for_docker```
+    - переходим с помощью этой команды в нужную нам папку.
+12. ```sudo mkdir -p /mnt/common_volume/grafana```
+    - команда создает полный путь /mnt/common_volume/swarm/grafana/config, включая все все необходимые промежуточные каталоги, если они не существуют
+13. ```sudo mkdir -p /mnt/common_volume/swarm/grafana/config```
+![Снимок](https://github.com/user-attachments/assets/85eb0b76-c4e3-4f97-b262-c9b58b80f967)
+    - команда создает структуру каталогов для Grafana и связанных с ней компонентов, если они ещё не существуют
+14. ```sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}```
+    - все файлы и каталоги в указанных директориях будут переделаны в собственность  текущему пользователю и его группе
+![12](https://github.com/user-attachments/assets/440ad579-f46b-46e3-a552-4fd74adc645f)
+15. ```touch /mnt/common_volume/grafana/grafana-config/grafana.ini```
+    - файл уже существует. Команда обновит его временые метки.
+16. ```cp config/* /mnt/common_volume/swarm/grafana/config/```
+    - команда копирует все файлы и подкаталоги из директории config в директорию ```/mnt/common_volume/swarm/grafana/config/```
+17. ```sudo mv grafana.yaml docker-compose.yaml```
+![18](https://github.com/user-attachments/assets/421e9d3b-6780-42c1-9308-9c2f1b04af30)
+    - команда переименовывает файл -grafana.yaml в docker
+18. ```sudo docker compose up -d```
+![image](https://github.com/user-attachments/assets/80745329-dbf0-448f-ae17-f34942366d6c)
+    - команда создает и запускает контейнеры в фоновом режиме, используя конфигурация из файлов docker-compromise.yml с правами суперпользователя.
+![stop](https://github.com/user-attachments/assets/4be56df0-e4f4-4bc7-a551-d1ad0bb1fdcc)
+19. ```sudo vi docker.compromise.yaml```
+![1](https://github.com/user-attachments/assets/93e53952-f3c1-49ee-91a7-724187735fe0)
+![2](https://github.com/user-attachments/assets/3fdcddba-e665-499f-b51a-73bcfeb36cdd)
+
+
+
+
