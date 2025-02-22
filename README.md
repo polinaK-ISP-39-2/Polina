@@ -60,6 +60,9 @@
 19. ```sudo vi docker.compromise.yaml```
 ![1](https://github.com/user-attachments/assets/93e53952-f3c1-49ee-91a7-724187735fe0)
 ![2](https://github.com/user-attachments/assets/3fdcddba-e665-499f-b51a-73bcfeb36cdd)
+20. sudo docker ps
+![-а](https://github.com/user-attachments/assets/92a10830-259b-44c7-8d0c-fd1ab7617708)
+21. 
 
 
 
