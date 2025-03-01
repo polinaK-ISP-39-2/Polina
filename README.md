@@ -58,9 +58,11 @@
     - команда создает и запускает контейнеры в фоновом режиме, используя конфигурация из файлов docker-compromise.yml с правами суперпользователя.
 ![stop](https://github.com/user-attachments/assets/4be56df0-e4f4-4bc7-a551-d1ad0bb1fdcc)
 19. ```sudo vi docker.compromise.yaml```
+    - эта команда предназначена для редактирования конфигурационного файла docker.compromise.yaml с правами суперпользователя.
 ![1](https://github.com/user-attachments/assets/93e53952-f3c1-49ee-91a7-724187735fe0)
 ![2](https://github.com/user-attachments/assets/3fdcddba-e665-499f-b51a-73bcfeb36cdd)
 20. sudo docker ps
+    -  эта команда позволяет увидеть текущие активные контейнеры в системе.
 ![-а](https://github.com/user-attachments/assets/92a10830-259b-44c7-8d0c-fd1ab7617708)
 21. 
 
