@@ -62,7 +62,8 @@
 - Можно скачать git прямо из командной строки прописав Y
 
   
-10. ![10](https://github.com/user-attachments/assets/884bbe0d-a21b-47ca-b0ba-6a4d4b94ffb3)
+10.
+    ![10](https://github.com/user-attachments/assets/884bbe0d-a21b-47ca-b0ba-6a4d4b94ffb3)
   - Как заметим, произошла ошибка; ```Не удалось установить пакеты: Failed  to obtain authentication```
 ![Fail](https://github.com/user-attachments/assets/5e3b4dfb-61ac-43ed-8042-6a6e5826e264)
         Что бы избавиться от проблемы, было принято ввести команду с использованием sudo, права суперпользователя. Это нужно, если мы хотим установить или изменить что-то в системе: ```sudo git clone https://github.com/skl256/grafana_stack_for_docker.git```
@@ -99,27 +100,37 @@
 
       
 17. ```sudo mv grafana.yaml docker-compose.yaml```
+    
 ![18](https://github.com/user-attachments/assets/421e9d3b-6780-42c1-9308-9c2f1b04af30)
     - команда переименовывает файл -grafana.yaml в docker
 
       
 18. ```sudo docker compose up -d```
+
 ![image](https://github.com/user-attachments/assets/80745329-dbf0-448f-ae17-f34942366d6c)
+
     - команда создает и запускает контейнеры в фоновом режиме, используя конфигурация из файлов docker-compromise.yml с правами суперпользователя.
+    
 ![stop](https://github.com/user-attachments/assets/4be56df0-e4f4-4bc7-a551-d1ad0bb1fdcc)
 
 
 19. ```sudo vi docker.compromise.yaml```
     - эта команда предназначена для редактирования конфигурационного файла docker.compromise.yaml с правами суперпользователя.
+      
 ![1](https://github.com/user-attachments/assets/93e53952-f3c1-49ee-91a7-724187735fe0)
 ![2](https://github.com/user-attachments/assets/3fdcddba-e665-499f-b51a-73bcfeb36cdd)
 
 
 20. sudo docker ps
     -  эта команда позволяет увидеть текущие активные контейнеры в системе.
+      
 ![-а](https://github.com/user-attachments/assets/92a10830-259b-44c7-8d0c-fd1ab7617708)
-21. 
 
+21. sudo docker compose stop
+   - Останавливает все запущенные контейнеры, определённые в файле docker-compose.yml, но не удаляет их
+![Без названия389_20250311174031](https://github.com/user-attachments/assets/9f69e0f9-f434-40b6-bb86-a4e5dffc2a6b)
+
+23. 
 
 
 
